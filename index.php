@@ -14,7 +14,7 @@
 <title>PeerXp Customer Support</title>
 </head>
 <body>
-<div style="background:#e4eaef">
+<div style="background:#e4eaef;height:1000px">
 <div class="container-fluid d-inline-block " style="height:400px;
 background:url('images/unnamed.png')no-repeat center center/cover;position: relative;">
 <div class="layer">

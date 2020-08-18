@@ -59,7 +59,7 @@ background:url('images/unnamed.png')no-repeat center center/cover;position: rela
 <div style="text-align:center;margin-top:25px;">
 <button style="border:none;background:#512dab;color:white;" class="px-2 py-2 rounded" >Knowledge Base</button>
 </div>
- 
+ <br>
  <?php
  session_start();
  if($_SESSION["message"]){

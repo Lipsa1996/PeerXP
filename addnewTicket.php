@@ -69,15 +69,15 @@ background:url('images/unnamed.png')no-repeat center center/cover;position: rela
      <h5 style="margin-top:30px;"><b>Submit a Ticket</b></h5><br>
      <p>Ticket Information</p><br>
      <form method="post" action="checkAPI.php">
-     <label for="dept">Department</label>
+     <label for="dept">Department<span class="required">*</span></label>
 
-<select name="dept" id="dept" class="form-control">
+<select name="dept" id="dept" class="form-control" required>
   <option value="7189000000051431">PWSLab DevOps Support</option>
   <option value="7189000001062045">i Support</option>
   <option value="7189000001896319">Naveena</option>
   <option value="7189000002187084">dept4</option>
 </select><br>
-<label for="category">Category</label>
+<label for="category">Category<span class="required">*</span></label>
 
 <select name="category" id="category" class="form-control" required>
   <option value="7189000002218007">category1</option>
@@ -87,18 +87,18 @@ background:url('images/unnamed.png')no-repeat center center/cover;position: rela
 </select><br>
 <label for="url">PWSLab Project URL</label>
 <input class="form-control" type="text" name="url"><br>
-<label for="sub">Subject</label>
+<label for="sub">Subject <span class="required">*</span></label>
 <input class="form-control" type="text" name="subject" required><br>
-<label for="descr">Description </label><br>
+<label for="descr">Description<span class="required">*</span> </label><br>
 <textarea type="text"class="form-control" required>
 </textarea><br>
-<label for="name">Contact Name</label>
+<label for="name">Contact Name<span class="required">*</span></label>
      <input class="form-control" type="text" name="name" value= " <?php echo $row[1]; ?> "><br>
-<label for="email">Email Address</label>
+<label for="email">Email Address<span class="required">*</span></label>
      <input class="form-control" type="email" name="email" value= " <?php echo $row[2]; ?> " ><br>
      <label for="cars">Phone</label>
      <input class="form-control" type="text" name="phone" value= " <?php echo $row[3]; ?> "><br>
-     <h6>Additional Information</h6><br>
+     <h6>Additional Information(Optional)</h6><br>
      <label for="priority">Priority</label>
 <select name="priority" id="priority" class="form-control" required>
   <option value="priority1">priority1</option>
@@ -119,6 +119,10 @@ background:url('images/unnamed.png')no-repeat center center/cover;position: rela
 <br><br><br>
 </body>
 <style>
+.required
+{
+    color: red;
+}
 .nav-item a{
   font-size:15px;
   margin-right:5px;
