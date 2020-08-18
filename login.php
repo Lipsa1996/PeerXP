@@ -77,8 +77,8 @@ margin-top:10px;margin-left:40px"class="px-3 bg-white" ><a href="verify.php" sty
      <div style="color:red;margin-left:80px;">
      <?php echo $message; ?></div><br>
      <form method="post">
-     <input class="form-control" type="text" placeholder="Email Address" name="email"><br>
-     <input class="form-control" type="text"placeholder="Password" name="password"><br>
+     <input class="form-control" type="email" placeholder="Email Address" name="email"><br>
+     <input class="form-control" type="password"placeholder="Password" name="password"><br>
      <div class="row">
      <div class="col-sm-8">
      <input type="checkbox" >Remember me

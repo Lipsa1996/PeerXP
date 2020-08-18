@@ -68,29 +68,30 @@ background:url('images/unnamed.png')no-repeat center center/cover;position: rela
     <div class="container">
      <h5 style="margin-top:30px;"><b>Submit a Ticket</b></h5><br>
      <p>Ticket Information</p><br>
-     <form method="post">
+     <form method="post" action="checkAPI.php">
      <label for="dept">Department</label>
 
 <select name="dept" id="dept" class="form-control">
-  <option value="dept1">dept1</option>
-  <option value="dept2">dept2</option>
-  <option value="dept3">dept3</option>
-  <option value="dept4">dept4</option>
+  <option value="7189000000051431">PWSLab DevOps Support</option>
+  <option value="7189000001062045">i Support</option>
+  <option value="7189000001896319">Naveena</option>
+  <option value="7189000002187084">dept4</option>
 </select><br>
 <label for="category">Category</label>
 
-<select name="category" id="category" class="form-control">
-  <option value="category1">category1</option>
-  <option value="category2">category2</option>
-  <option value="category3">category3</option>
-  <option value="category4">category4</option>
+<select name="category" id="category" class="form-control" required>
+  <option value="7189000002218007">category1</option>
+  <option value="7189000002222001">category2</option>
+  <option value="7189000002197802">category3</option>
+  <option value="7189000002179003">category4</option>
 </select><br>
 <label for="url">PWSLab Project URL</label>
 <input class="form-control" type="text" name="url"><br>
 <label for="sub">Subject</label>
-<input class="form-control" type="text" name="subject"><br>
+<input class="form-control" type="text" name="subject" required><br>
 <label for="descr">Description </label><br>
-<input type="text" style="height:250px"class="form-control"><br>
+<textarea type="text"class="form-control" required>
+</textarea><br>
 <label for="name">Contact Name</label>
      <input class="form-control" type="text" name="name" value= " <?php echo $row[1]; ?> "><br>
 <label for="email">Email Address</label>
@@ -99,7 +100,7 @@ background:url('images/unnamed.png')no-repeat center center/cover;position: rela
      <input class="form-control" type="text" name="phone" value= " <?php echo $row[3]; ?> "><br>
      <h6>Additional Information</h6><br>
      <label for="priority">Priority</label>
-<select name="priority" id="priority" class="form-control">
+<select name="priority" id="priority" class="form-control" required>
   <option value="priority1">priority1</option>
   <option value="priority2">priority2</option>
   <option value="priority3">priority3</option>

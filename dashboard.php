@@ -59,6 +59,18 @@ background:url('images/unnamed.png')no-repeat center center/cover;position: rela
 <div style="text-align:center;margin-top:25px;">
 <button style="border:none;background:#512dab;color:white;" class="px-2 py-2 rounded" >Knowledge Base</button>
 </div>
+ 
+ <?php
+ session_start();
+ if($_SESSION["message"]){
+   echo '<div class="alert alert-success" style="width:80%;margin-left:auto;margin-right:auto" role="alert">
+   <strong>'.$_SESSION["message"].'<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+   <span aria-hidden="true">&times;</span>
+ </button></strong></div>';
+   
+   $_SESSION["message"] = null;
+ }
+ ?>
  </div>  
 </body>
 <style>
